@@ -129,18 +129,14 @@ function getPreviewPath(): string | null {
 }
 
 function App() {
-  const previewPath = getPreviewPath();
+  const previewPath = getPreviewPath() ?? "afa-portfolio/HomePage";
 
-  if (previewPath) {
-    return (
-      <PreviewRenderer
-        componentPath={previewPath}
-        modules={discoveredModules}
-      />
-    );
-  }
-
-  return <Gallery />;
+  return (
+    <PreviewRenderer
+      componentPath={previewPath}
+      modules={discoveredModules}
+    />
+  );
 }
 
 export default App;
