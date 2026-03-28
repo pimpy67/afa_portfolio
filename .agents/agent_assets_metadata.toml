@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "I0qFj0rvOOcP_nlPVdb9z"
+uri = "file://screenshots/afa-architettura-homepage.jpg"
+type = "image"
+title = "AFA Architettura — Home Page Preview"
