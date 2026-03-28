@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-const DOMAIN = "/__mockup";
+const DOMAIN = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 const projects = [
   {
